@@ -16,23 +16,12 @@ public class Solution_1{
         // it iterates the values of the given array, checks scores and assigns count using a switch case
         for (int score: dice) {
             switch (score){
-                case 1:
-                    count[0]++;
-                    break;
-                case 2:
-                    count[1]++;
-                    break;
-                case 3:
-                    count[2]++;
-                    break;
-                case 4:
-                    count[3]++;
-                    break;
-                case 5:
-                    count[4]++;
-                    break;
-                case 6:
-                    count[5]++;
+                case 1 -> count[0]++;
+                case 2 -> count[1]++;
+                case 3 -> count[2]++;
+                case 4 -> count[3]++;
+                case 5 -> count[4]++;
+                case 6 -> count[5]++;
             }
         } 
 
@@ -61,7 +50,7 @@ public class Solution_1{
                 }
             }
         }
-        
+
         // > CHECKING IF THE SCORE 1 AND 5 HAVE OCCURRENCES > 0 AND ASSIGNING POINTS IF TRUE
         //if true
         if(count[0] > 0)
